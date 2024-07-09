@@ -2,6 +2,8 @@ package com.example.demo;
 
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 
 @Service
 public class DeezerSongSearchService {
@@ -13,6 +15,7 @@ public class DeezerSongSearchService {
     }
 
     public DeezerSongSearchResultData getSongData(int artistId) {
-        return this.deezerApiSongSearch.getSongData(artistId).data().getFirst();
+        List<DeezerSongSearchResultData> data = this.deezerApiSongSearch.getSongData(artistId).data();
+        return !data.isEmpty() ? data.getFirst() : null;
     }
 }

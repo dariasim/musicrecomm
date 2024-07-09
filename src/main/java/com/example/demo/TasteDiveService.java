@@ -1,9 +1,6 @@
 package com.example.demo;
-
 import org.springframework.stereotype.Service;
-
 import java.util.List;
-
 
 @Service
 public class TasteDiveService {
@@ -15,6 +12,6 @@ public class TasteDiveService {
     }
 
     public List<String> getSimilarArtists(String artist) {
-        return this.tasteDiveApi.getSimilarArtists(artist).similar().results().stream().map(it -> it.name()).toList();
+        return this.tasteDiveApi.getSimilarArtists(artist).similar().results().stream().map(it -> it.name()).toList().subList(0, 10);
     }
 }
