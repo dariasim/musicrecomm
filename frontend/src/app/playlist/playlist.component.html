@@ -1,0 +1,31 @@
+<div>
+  <h1>Hello, friend!</h1>
+  <p>Enter the name of the artist below, and I will generate a perfect playlist for you!</p>
+  <input type="text" [(ngModel)]="artistName" placeholder="Enter artist name here">
+  <button (click)="generatePlaylist()">Generate playlist</button>
+
+  <div *ngIf="showResults">
+    <p>So, I've heard you like {{ artistName }}? Here is the playlist that you should check out...</p>
+    <h2>{{ playlistName }}</h2>
+    <p>{{ playlistDescription }}</p>
+
+    <table>
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Artist name</th>
+        <th>Song name</th>
+        <th>Listen</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let song of songs; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ song.artistName }}</td>
+        <td>{{ song.songName }}</td>
+        <td><a [href]="song.songUrl" target="_blank">Open in Deezer</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
