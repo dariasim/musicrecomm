@@ -1,6 +1,26 @@
 services:
-  daria-playlist:
-    image: daria
-    container_name: daria-playlist
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Your existing Dockerfile for the backend
+    container_name: backend
     ports:
       - "5173:5173"
+    networks:
+      - mynetwork
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "4200:4200"
+#    depends_on:
+#      - backend
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
