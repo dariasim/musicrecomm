@@ -4,7 +4,11 @@
   <input type="text" [(ngModel)]="artistName" placeholder="Enter artist name here">
   <button (click)="generatePlaylist()">Generate playlist</button>
 
-  <div *ngIf="showResults">
+  <div *ngIf="isLoading">
+    <img ngSrc="assets/images/animation.gif" alt="Loading..." height="480" width="480"/>
+  </div>
+
+  <div *ngIf="showResults && !isLoading">
     <p>So, I've heard you like {{ artistName }}? Here is the playlist that you should check out...</p>
     <h2>{{ playlistName }}</h2>
     <p>{{ playlistDescription }}</p>

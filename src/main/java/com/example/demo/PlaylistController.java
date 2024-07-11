@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -24,16 +25,12 @@ public class PlaylistController {
 
     @Operation(summary = "Get a playlist", description = "Fetches most popular song by the artist")
     @GetMapping("/playlist/{artistName}")
+    @CrossOrigin(origins = "http://localhost:4200") // Add your frontend URL
     public String getPlaylist(@PathVariable String artistName) throws JsonProcessingException {
     return playlistService.getPlaylist(artistName);
     }
 
 
-    //@Operation(summary = "Get a playlist with description", description = "Generated the playlist with songs of similar artists")
-    //@GetMapping("/playlist-data/{artistName}")
-    //public PlaylistResponse getPlaylist(@PathVariable String artistName) {
-    //    return playlistService.getPlaylist(artistName);
-    //}
 
 
 }

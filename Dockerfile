@@ -1,5 +1,5 @@
 FROM openjdk:22-slim
-EXPOSE 80
+EXPOSE 5173
 
 RUN apt-get update
 RUN apt-get install -y maven
