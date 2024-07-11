@@ -1,0 +1,6 @@
+services:
+  daria-playlist:
+    image: daria
+    container_name: daria-playlist
+    ports:
+      - "5173:5173"

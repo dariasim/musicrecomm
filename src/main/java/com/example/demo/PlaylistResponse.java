@@ -1,8 +1,9 @@
 package com.example.demo;
+
 import java.util.ArrayList;
 import java.util.List;
 
-class PlaylistResponseItem {
+class PlaylistSong {
     public String artistName;
     public String songName;
     public long songId;
@@ -10,12 +11,11 @@ class PlaylistResponseItem {
 }
 
 public class PlaylistResponse {
+    public String playlistName;
+    public String playlistDescription;
+    public List<PlaylistSong> songs;
 
     public PlaylistResponse() {
-        this.data = new ArrayList<>();
+        this.songs = new ArrayList<>();
     }
-
-    public List<PlaylistResponseItem> data;
 }
-
-
