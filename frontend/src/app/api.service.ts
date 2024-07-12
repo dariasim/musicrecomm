@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = 'http://localhost:5173/api'; // Adjust the URL based on your backend API
+  private apiUrl = '${environment.backendBaseUrl}'; // Adjust the URL based on your backend API
 
   constructor(private http: HttpClient) {}
 
