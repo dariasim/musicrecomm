@@ -22,5 +22,5 @@ jobs:
         with:
           appSourcePath: ${{ github.workspace }}
           acrName: zemregistry
-          containerAppName: <musicrecomm-beackend>
+          containerAppName: musicrecomm-backend
           resourceGroup: ob-fsss-2024
