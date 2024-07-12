@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = "*")
 @Tag(name = "Playlist API", description = "API for searching for the most popular song of the artist")
 public class PlaylistController {
 
@@ -25,7 +26,6 @@ public class PlaylistController {
 
     @Operation(summary = "Get a playlist", description = "Fetches most popular song by the artist")
     @GetMapping("/playlist/{artistName}")
-    @CrossOrigin(origins = "http://localhost:4200") // Add your frontend URL
     public String getPlaylist(@PathVariable String artistName) throws JsonProcessingException {
     return playlistService.getPlaylist(artistName);
     }
