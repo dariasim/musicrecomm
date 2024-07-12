@@ -10,7 +10,7 @@ import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 public class TasteDiveConfiguration {
     @Bean
     public TasteDiveApi TasteDiveClient() {
-        final RestClient restClient = RestClient.builder().baseUrl("https://tastedive.com/api/").build();
+        final RestClient restClient = RestClient.builder().baseUrl("https://ws.audioscrobbler.com/2.0/").build();
         final RestClientAdapter adapter = RestClientAdapter.create(restClient);
         final HttpServiceProxyFactory factory = HttpServiceProxyFactory.builderFor(adapter).build();
 

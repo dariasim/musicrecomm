@@ -1,4 +1,4 @@
 package com.example.demo;
 
-public record TasteDiveResponse (TasteDiveSimilar similar) {
+public record TasteDiveResponse (TasteDiveSimilar similarartists) {
 }

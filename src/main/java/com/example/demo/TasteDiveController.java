@@ -26,21 +26,9 @@ public class TasteDiveController {
         this.chatModel = chatModel;
     }
 
-    @Operation(summary = "Get similar artists", description = "Fetches similar artists from TasteDive API based on the given artist name")
+    @Operation(summary = "Get similar artists", description = "Fetches similar artists from LastFM Api based on the given artist name")
     @GetMapping("/similar-artists")
     public List<String> getSimilarArtists(@RequestParam String artist) {
         return tasteDiveService.getSimilarArtists(artist);
-    }
-
-    @GetMapping("/test")
-    public String test(@RequestParam String test) {
-        return chatModel.call(
-                new Prompt(
-                        test,
-                        AzureOpenAiChatOptions
-                                .builder()
-                                .build()
-                )
-        ).getResult().getOutput().getContent();
     }
 }

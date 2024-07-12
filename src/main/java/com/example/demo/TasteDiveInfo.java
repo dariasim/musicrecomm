@@ -5,5 +5,5 @@ import java.util.List;
 public record TasteDiveInfo (String name, String type) {
 }
 
-record TasteDiveSimilar (List<TasteDiveInfo> results) {
+record TasteDiveSimilar (List<TasteDiveInfo> artist) {
 }
