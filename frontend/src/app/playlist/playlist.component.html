@@ -2,8 +2,9 @@
   <h1>Hello, friend!</h1>
   <p>Enter the name of the artist below, and I will generate a perfect playlist for you!</p>
   <input type="text" [(ngModel)]="artistName" placeholder="Enter artist name here">
+  <div>
   <button (click)="generatePlaylist()">Generate playlist</button>
-
+    </div>
   <div *ngIf="isLoading">
     <img ngSrc="assets/images/animation.gif" alt="Loading..." height="480" width="480"/>
   </div>
