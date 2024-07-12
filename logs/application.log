@@ -498,3 +498,25 @@
 {"timestamp":"2024-07-12 14:14:37.223","level":"INFO","thread":"http-nio-5173-exec-9","logger":"com.example.demo.PlaylistService","message":"ArtistId 74378 name: The Courteeners","context":"default"}
 {"timestamp":"2024-07-12 14:14:37.655","level":"INFO","thread":"http-nio-5173-exec-9","logger":"com.example.demo.PlaylistService","message":"ArtistId 13750 name: The Enemy","context":"default"}
 {"timestamp":"2024-07-12 14:14:47.960","level":"INFO","thread":"http-nio-5173-exec-9","logger":"com.example.demo.PlaylistService","message":"Created playlist in 14060 seconds","context":"default"}
+{"timestamp":"2024-07-12 14:22:58.807","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"ArtistId 1035806 name: Royal Blood","context":"default"}
+{"timestamp":"2024-07-12 14:22:59.052","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"ArtistId 2210161 name: Nothing But Thieves","context":"default"}
+{"timestamp":"2024-07-12 14:22:59.369","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"ArtistId 919 name: Franz Ferdinand","context":"default"}
+{"timestamp":"2024-07-12 14:22:59.627","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"ArtistId 1247 name: Kasabian","context":"default"}
+{"timestamp":"2024-07-12 14:22:59.890","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"ArtistId 399 name: Radiohead","context":"default"}
+{"timestamp":"2024-07-12 14:23:00.305","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"ArtistId 8 name: Placebo","context":"default"}
+{"timestamp":"2024-07-12 14:23:00.661","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"ArtistId 897 name: The Killers","context":"default"}
+{"timestamp":"2024-07-12 14:23:00.910","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"ArtistId 390183 name: 30 Seconds to Mars","context":"default"}
+{"timestamp":"2024-07-12 14:23:01.307","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"ArtistId 892 name: Coldplay","context":"default"}
+{"timestamp":"2024-07-12 14:23:01.590","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"ArtistId 2305 name: Feeder","context":"default"}
+{"timestamp":"2024-07-12 14:23:23.039","level":"INFO","thread":"http-nio-5173-exec-4","logger":"com.example.demo.PlaylistService","message":"Created playlist in 24746 seconds","context":"default"}
+{"timestamp":"2024-07-12 14:25:09.863","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"ArtistId 1035806 name: Royal Blood","context":"default"}
+{"timestamp":"2024-07-12 14:25:10.131","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"ArtistId 2210161 name: Nothing But Thieves","context":"default"}
+{"timestamp":"2024-07-12 14:25:10.389","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"ArtistId 919 name: Franz Ferdinand","context":"default"}
+{"timestamp":"2024-07-12 14:25:10.623","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"ArtistId 1247 name: Kasabian","context":"default"}
+{"timestamp":"2024-07-12 14:25:10.863","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"ArtistId 399 name: Radiohead","context":"default"}
+{"timestamp":"2024-07-12 14:25:11.139","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"ArtistId 8 name: Placebo","context":"default"}
+{"timestamp":"2024-07-12 14:25:11.401","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"ArtistId 897 name: The Killers","context":"default"}
+{"timestamp":"2024-07-12 14:25:11.680","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"ArtistId 390183 name: 30 Seconds to Mars","context":"default"}
+{"timestamp":"2024-07-12 14:25:11.933","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"ArtistId 892 name: Coldplay","context":"default"}
+{"timestamp":"2024-07-12 14:25:12.278","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"ArtistId 2305 name: Feeder","context":"default"}
+{"timestamp":"2024-07-12 14:25:24.545","level":"INFO","thread":"http-nio-5173-exec-1","logger":"com.example.demo.PlaylistService","message":"Created playlist in 15205 seconds","context":"default"}
